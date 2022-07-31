@@ -1,94 +1,204 @@
-* {
-	padding: 0;
-	margin: 0;
-	text-decoration: none;
-	list-style: none;
-	box-sizing: border-box;
+body {
+	background: url('imagens/shark.png');
+	background-attachment: fixed;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
-body {
-	font-family: montserrat;
+ul {
+	list-style-type: none;
+	padding-top: 50px;
+	padding-bottom: 50px;
+  }
+
+  li {
+	display: inline;
+	margin-left: 5%;
+	margin-right: 5%;
+  }
+
+.container {
+	padding-top: 45px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
-nav {
-	background: #5434af;
-	height: 80px;
+
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+
+.topnav {
+	background-color: #0d2b5c;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
 	width: 100%;
 }
-label.logo {
-	color: white;
-	font-size: 35px;
-	line-height: 80px;
-	padding: 0 100px;
-	font-weight: bold;
-}
-nav ul {
-	float: right;
-	margin-right: 20px;
-}
-nav ul li {
-	display: inline-block;
-	line-height: 80px;
-	margin: 0 5px;
-}
-nav ul li a {
-	color: white;
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 	font-size: 17px;
-	padding: 7px 13px;
-	border-radius: 3px;
-	text-transform: uppercase;
 }
-a.active, a:hover {
-	background: #1d075f;
-	transition: .5s;
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	background-color: #4287f5;
+	color: #0d2b5c;
 }
-.checkbtn {
-	font-size: 30px;
-	color: white;
-	float: right;
-	line-height: 80px;
-	margin-right: 40px;
-	cursor: pointer;
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+	background-color: #4287f5;
+	color: #0d2b5c;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
 	display: none;
 }
-#check {
-	display: none;
-}
-@media (max-width: 952px){
-	label.logo{
-		font-size: 30px;
-		padding-left: 50px;
+
+@media screen and (max-width: 600px) {
+	.topnav a:not(:first-child) {
+		display: none;
 	}
-	nav ul li a{
-		font-size: 16px;
-	}
-}
-@media (max-width: 858px){
-	.checkbtn {
+
+	.topnav a.icon {
+		float: right;
 		display: block;
 	}
-	ul{
-		position: fixed;
-		width: 100%;
-		height: 100vh;
-		background: #1d075f;
-		top: 80px;
-		left: -100%;
+
+	.home {
 		text-align: center;
-		transition: all .5s;
 	}
-	nav ul li{
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+	.topnav.responsive {
+		position: relative;
+	}
+
+	.topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.topnav.responsive a {
+		float: none;
 		display: block;
-		margin: 50px 0;
-		line-height: 30px;
+		text-align: left;
 	}
-	nav ul li a {
-		font-size: 20px;
-	}
-	a:hover, a.active {
-		background: none;
-		color: #5434af;
-	}
-	#check:checked ~ ul {
-		left: 0;
-	}
+}
+
+.conteudo-sessao {
+	display: flex;
+	justify-content: center;
+	background-color: white;
+}
+
+.conteudo-sessao div {
+	float: left;
+	margin: 1%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	background-color: white;
+	box-shadow: 10px 10px 16px #c7ccd4;
+}
+
+.conteudo-sessao div:hover {
+	transform: scale(1.1);
+}
+
+.conteudo-sessao div h3 {
+	text-align: center;
+	vertical-align: center;
+}
+
+.conteudo-home {
+	height: 300px;
+	background-color: #4287f5;
+}
+
+.titulo-sessao {
+	text-align: center;
+	vertical-align: center;
+}
+
+.sessao {
+	padding-top: 50px;
+	width: 100%;
+}
+
+
+.footer {
+	background-color: #0d2b5c;
+	height: 150px;
+	background-color: #FFF;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	background-color: #0d2b5c;
+}
+
+/*PRODUTOS*/
+
+.conteudo-produto {
+	padding-top: 200px;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+#produtos {}
+
+/*card*/
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+	background-color: #4287f5;
+}
+
+.price {
+	color: grey;
+	font-size: 22px;
+}
+
+.card button {
+	border: none;
+	outline: 0;
+	padding: 12px;
+	color: white;
+	background-color: #0d2b5c;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+}
+
+.card button:hover {
+	opacity: 0.7;
 }

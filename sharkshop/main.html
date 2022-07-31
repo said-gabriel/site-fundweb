@@ -1,29 +1,68 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>Responsive Menu</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="script.js"></script>
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-	<nav>
-		<input type="checkbox" id="check">
-		<label for="check" class="checkbtn">
-			<i class="fas fa-bars"></i>
-		</label>
-		<label class="logo">Minha Logo</label>
-		<ul>
-			<li><a class="active" href="#">Início</a></li>
-			<li><a href="#">Sobre</a></li>
-			<li><a href="#">Serviços</a></li>
-			<li><a href="#">Contato</a></li>
-		</ul>
+	<nav class="topnav" id="myTopnav">
+		<nav class="topnav" id="myTopnav">
+			<a href="main.html" class="home">Home<!-- <img src="imagens/shark-icon.png" alt="">--></a>
+			<a href="main.html#produtos">Produtos</a>
+			<a href="main.html#noticias" >Noticias</a>
+			<a href="cadastro.html">Cadastro</a>
+			<a href="#cadastro">Contato</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</nav>
 	</nav>
-	<section>
-		<h1>Conteúdo</h1>
-	</section>
+	<div class="container">
+		<section id="home" class="sessao">
+			<div class="conteudo-home">
+				<h1 class="titulo-sessao">CAROUSEL OU ALGO INTRODUTÓRIO</h1>
+			</div>
+		</section>
+		<section id="produtos" class="sessao">
+			<h1 class="titulo-sessao">PRODUTOS</h1>
+			<div class="conteudo-sessao">
+				<div>
+					<img src="imagens/equipamentos.jpg" alt="">
+					<h3>Equipamentos</h3>
+				</div>
+				<div>
+					<img src="imagens/pranchas.jpg" alt="">
+					<h3>Pranchas</h3>
+				</div>
+				<div>
+					<img src="imagens/roupas.jpg" alt="">
+					<h3>Roupas</h3>
+				</div>
+			</div>
+		</section>
+		<section id="noticias" class="sessao">
+			<h1 class="titulo-sessao">NOTICIAS</h1>
+			<div class="conteudo-home">
+
+			</div>
+		</section>
+	</div>
+	<footer class="footer">
+		<ul>
+			<li><a href="https:/www.instagram.com"><img src="imagens/instagram.png" alt=""></a></li>
+			<li><a href="https:/www.facebook.com"><img src="imagens/facebook.png" alt=""></a></li>
+			<li><a href="https://www.google.com/maps"><img src="imagens/maps.png" alt=""></a></li>
+			<li><a href="https://mail.google.com/"><img src="imagens/icons8-gmail-48.png" alt=""></a></li>
+		</ul>
+	</footer>
 
 </body>
+
 </html>
