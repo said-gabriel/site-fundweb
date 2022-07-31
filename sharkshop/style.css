@@ -120,15 +120,17 @@ ul {
 
 .conteudo-sessao div {
 	float: left;
-	margin: 1%;
-	margin-top: 5%;
-	margin-bottom: 5%;
 	background-color: white;
 	box-shadow: 10px 10px 16px #c7ccd4;
 }
+.conteudo-sessao a {
+	margin: 1%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
 
 .conteudo-sessao div:hover {
-	transform: scale(1.1);
+	transform: scale(1.03);
 }
 
 .conteudo-sessao div h3 {
