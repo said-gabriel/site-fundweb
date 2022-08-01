@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Fale Conosco</title>
+</head>
+<body>
+    <nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<label class="logo">Minha Logo</label>
+		<ul>
+			<li><a href="#">Início</a></li>
+			<li><a href="./news.html">Notícias</a></li>
+			<li><a href="#">Serviços</a></li>
+			<li><a class="active" href="./contact.html">Contato</a></li>
+		</ul>
+	</nav>
+	<section>
+        <h1 style="margin: 20px;">Entre em contato conosco</h1>
+		<form action="https://formsubmit.co/lucasmxavier1@gmail.com" method="POST">
+            <div class="form-fields">
+                <input type="text" name="email" placeholder="E-mail" required></input>
+                <input type="text" name="subject" placeholder="Assunto" required></input>
+                <textarea type="text" name="body" placeholder="Sua mensagem" required></textarea>
+            </div>
+            <div class="form-buttons">
+                <input type="submit" value="Enviar dados"></input>
+                <input type="reset" value="Limpar dados"></input>
+            </div>
+        </form>
+	</section>
+</body>
+</html>
