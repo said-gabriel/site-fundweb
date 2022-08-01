@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Responsive Menu</title>
+    <title>Cadastro</title>
+    <link rel="icon" type="image/x-icon" href="/imagens/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
@@ -12,20 +13,140 @@
 </head>
 
 <body>
-    <nav class="topnav" id="myTopnav">
-        <a href="main.html" class="home">Home<!-- <img src="imagens/shark-icon.png" alt="">--></a>
-        <a href="main.html#produtos">Produtos</a>
-        <a href="main.html#noticias" >Noticias</a>
-        <a href="cadastro.html">Cadastro</a>
-        <a href="#cadastro">Contato</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </nav>
     <div class="container">
-        <section class="conteudo-home">
+        <nav class="topnav" id="myTopnav">
+            <a href="main.html" class="home">Home
+                <!-- <img src="imagens/shark-icon.png" alt="">-->
+            </a>
+            <a href="main.html#categorias">Categorias</a>
+            <a href="main.html#noticias">Noticias</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="#cadastro">Contato</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        <div class="container">
             <h1>Cadastro</h1>
-        </section>
+            <section class="conteudo-cadastro">
+                <form  action="mailto:gabriel.s.torres@edu.ufes.br" class="form" method="post" enctype="text/plain">                  
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="nome">Nome:</label>   
+                            </div>
+                            <div class="col-25">
+                                <input required type="text" name="nome" size="70" placeholder="Nome completo..." />
+                            </div>
+                            <div class="col-25">
+                                <label required for="email">E-mail:</label>
+                            </div>
+                            <div class="col-25">
+                                <input required type="email" name="email" size="15" placeholder="email@dominio.com" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="cpf">CPF:</label> 
+                            </div>
+                            <div class="col-25">
+                                <input required type="text" name="cpf" size="15" required placeholder="xxx.xxx.xxx-xx" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" />
+                            </div>
+                            <div class="col-25">
+                                <label for="date">Data de Nascimento: </label>
+                            </div>
+                            <div class="col-25">
+                                <input required type="date" required="true" maxlength="10" name="date" pattern="[0-9]{2}\\[0-9]{2}\\[0-9]{4}$"/>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="phone">Telefone Residencial: </label>
+                            </div>
+                            <div class="col-25">
+                                <input required type="tel" id="phone" name="phone" required placeholder="(xx) xxxxx-xxxx" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{4}"/>
+                            </div>
+                            <div class="col-25">
+                                <label for="profissao">Profissão:</label>
+                            </div>
+                            <div class="col-25">
+                                <input required type="text" id="profissao" name="prof" size="100">
+                            </div>
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="col-50">    
+                                <label class="label-radio" for="estadoCivil">Estado Civil:</label>>
+                                <input type="radio" name="casado">Casado</input>
+                                <input type="radio" name="solteiro">Solteiro</input>   
+                            </div>
+                            <div class="col-50">
+                                <label class="label-radio" for="sexo">Sexo:</label>
+                                <label class="label-radio">Masculino:</label>
+                                <input type="radio" name="masculino"></input>
+                                <label class="label-radio" for="sexo">Feminino:</label>
+                                <input type="radio" name="feminino"></input>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-16">
+                                <label for="rua">Rua:</label>  
+                            </div>
+                            <div class="col-16">
+                                <input required type="text" id="rua" name="street" size="100">
+                            </div>
+                            <div class="col-16">
+                                <label for="cidade">Cidade:</label>
+                            </div>
+                            <div class="col-16">
+                                <input required type="text" id="cidade" name="city" size="100">
+                            </div>
+                            <div class="col-16">
+                                <label for="numero">Numero:</label>
+                            </div>
+                            <div class="col-16">
+                                <input required type="number" id="numero" name="state"> 
+                            </div>
+                        
+                        </div>
+
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="cidade">Estado:</label>
+                            </div>
+                            <div class="col-25">
+                                <input required type="text" id="estado" name="state" size="100"> 
+                            </div>
+                            <div class="col-25">
+                                <label for="cep">CEP:</label>
+                            </div>
+                            <div class="col-25">
+                                <input required type="text" id="cep" name="cep" size="10"  required placeholder="xx.xxx-xxx" pattern="[0-9]{2}.[0-9]{3}-[0-9]{3}">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="comentarios">Comentarios:</label>
+                            </div>
+                            <div class="col-50">
+                                <textarea required rows="5" style="resize:none"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="toolbar-form">
+                            <input class="input-form" type="reset" value="Limpar">               
+                            <input class="input-form" type="submit" value="Enviar Dados">                             
+                        </div>
+                    
+                </form>
+            </section>
+        </div>
     </div>
     <footer class="footer">
         <ul>

@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Produtos: Equipamentos</title>
+    <title>Equipamentos</title>
+    <link rel="icon" type="image/x-icon" href="/imagens/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
@@ -16,7 +17,7 @@
         <a href="main.html" class="home">Home
             <!-- <img src="imagens/shark-icon.png" alt="">-->
         </a>
-        <a href="main.html#produtos">Produtos</a>
+        <a href="main.html#categorias">Categorias</a>
         <a href="main.html#noticias">Noticias</a>
         <a href="cadastro.html">Cadastro</a>
         <a href="#cadastro">Contato</a>
@@ -25,30 +26,43 @@
         </a>
     </nav>
     <div class="container">
-        <h1>Equipamentos</h1>
-        <section class="conteudo-sessao">
-            <div class="card">
-                <img src="imagens/fun-board.webp" alt="Denim Jeans" style="width:100%">
-                <h1>Prancha Fun Board</h1>
-                <p class="price">$800,00</p>
-                <p>Prancha excelente para iniciantes</p>
-                <p><button>Mais informações</button></p>
-            </div>
-            <div class="card">
-                <img src="imagens/prancha-surf.jpg" alt="Denim Jeans" style="width:100%">
-                <h1>Prancha comum</h1>
-                <p class="price">$700,00</p>
-                <p>Prancha ideal para manobras</p>
-                <p><button>Mais informações</button></p>
-            </div>
-            <div class="card">
-                <img src="imagens/body-board.webp" alt="Denim Jeans" style="width:100%">
-                <h1>Prancha Body Board</h1>
-                <p class="price">$1500,00</p>
-                <p>Prancha ideal para crianças</p>
-                <p><button>Mais informações</button></p>
-            </div>
-        </section>
+        <div class="row">
+            <div class="row">
+                <p class="breadcrumbs"><a href="main.html">Home</a> / <a href="main.html#categorias">Categorias</a>  / </p>
+            </div> 
+            <h1>Equipamentos</h1>
+            <section class="conteudo-sessao">
+                <div class="card">
+                    <img src="imagens/deck1.jpg" alt="Denim Jeans" style="width:100%">
+                    <h1>Deck Bullys Colours 3M Preto/Verde</h1>
+                    <p class="price">$160,00</p>
+                    <p>Deck Prancha Surf Bullys modelo Colours cola 3M</p>
+                    <p><form action="deck.html">
+                        <button>Mais informações</button>
+                    </form></p>
+                </div>
+                <div class="card">
+                    <img src="imagens/quilhas1.jpg" alt="Denim Jeans" style="width:100%">
+                    <h1>Quilhas Bullys Ultralight B5 - Medium</h1>
+                    <p class="price">$539,00</p>
+                    <p>Quilhas Bullys encaixe Futures B5 - Medium - Média - ULTRALIGHT</p>
+                    <p><form action="quilhas.html">
+                        <button>Mais informações</button>
+                    </form></p>
+                </div>
+                <div class="card">
+                    <img src="imagens/leash1.jpg" alt="Denim Jeans" style="width:100%">
+                    <h1>Leash Creatures 6' x 5 mm - Reliance Lite</h1>
+                    <p class="price">$445,00</p>
+                    <p>Leash - Estrepe - Cordinha Creatures Of Leisure Reliance Lite 6' x 5 mm</p>
+                    <p>
+                    <form action="leash.html">
+                        <button>Mais informações</button>
+                    </form>
+                    </p>
+                </div>
+            </section>
+        </div>
     </div>
     <footer class="footer">
         <ul>

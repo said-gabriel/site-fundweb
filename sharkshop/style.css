@@ -48,6 +48,8 @@ ul {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	left: 0;
+	right: 0;
 }
 
 /* Style the links inside the navigation bar */
@@ -157,11 +159,16 @@ ul {
 .footer {
 	background-color: #0d2b5c;
 	height: 150px;
-	background-color: #FFF;
-	bottom: 0px;
 	width: 100%;
 	text-align: center;
-	background-color: #0d2b5c;
+   	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.conteudo-cadastro{
+	height: 800px;
+	background-color: #4287f5;
 }
 
 /*PRODUTOS*/
@@ -171,8 +178,6 @@ ul {
 	padding-left: 200px;
 	padding-right: 200px;
 }
-
-#produtos {}
 
 /*card*/
 .card {
@@ -204,3 +209,175 @@ ul {
 .card button:hover {
 	opacity: 0.7;
 }
+.card p {
+	padding: 2%;
+}
+
+
+@media screen and (max-width: 768px) {
+	.card{
+	  padding: 2%;
+	}
+  }
+
+
+/*CADASTRO*/
+
+.row input{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #0d2b5c;
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize: vertical;
+  }
+
+ 
+  .input-form {
+	background-color: #0d2b5c;
+	color: white;
+	padding: 12px 20px;
+	margin: 5%;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  .col-25 {
+	float: left;
+	width: 23%;
+	margin-top: 6px;
+	padding-right: 2%;
+  }
+
+  label{
+	padding-right: 20px;
+  }
+  
+  .col-12 {
+	float: left;
+	width: 10.5%;
+	margin-top: 6px;
+	padding-right: 2%;
+	
+  }
+  .col-16 {
+	float: left;
+	width: 14.5%;
+	margin-top: 6px;
+	padding-right: 2%;
+	
+  }
+
+  .col-75 {
+	float: left;
+	width: 73%;
+	margin-top: 6px;
+	padding-right: 2%;
+  }
+
+  .col-50 {
+	float: left;
+	width: 48%;
+	margin-top: 6px;
+	padding-right: 2%;
+  }
+
+  .form {
+	padding: 2%;
+	height: max-content;
+  }
+
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+  .toolbar-form{
+	display: flex;
+  	align-items: center;
+  }
+  
+  @media screen and (max-width: 600px) {
+	.col-25, .col-75, .col-16, .col-12, .col-50 input[type=submit] {
+	  width: 100%;
+	  margin-top: 0;
+	}
+  }
+
+  @media screen and (max-width: 768px) {
+	.label-radio {
+	  display: block;
+	}
+  }
+
+
+  /*IMAGENS DO PRODUTO*/
+
+  .row-produto{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+  }
+
+  .row-produto img {
+	margin-top: 8px;
+	width: 200px;
+	height: 200px;
+	padding-left: 50px;
+  }
+ 
+  li {
+	display: inline-block;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+	.column {
+	  flex: 50%;
+	  max-width: 50%;
+	}
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.row-produto div{
+	  display: block;
+	}
+  }
+
+
+  .tabela-info {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	background-color: white;
+  }
+  
+  .tabela-info td, .tabela-info th {
+	border: 1px solid #ddd;
+	padding: 8px;
+  }
+    
+  .tabela-info th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+  }
+
+  .breadcrumbs {
+	padding: 10px 16px;
+	background-color: white;
+  }
+
+.breadcrumbs a {
+	color: #0d2b5c;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+
+  
