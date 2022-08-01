@@ -6,46 +6,36 @@
 	box-sizing: border-box;
 }
 
+ul {
+	list-style-type: none;
+	padding-top: 50px;
+	padding-bottom: 50px;
+  }
+
+  li {
+	display: inline;
+	margin-left: 5%;
+	margin-right: 5%;
+  }
+
+.container {
+	padding-top: 45px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
 body {
-	font-family: montserrat;
+	background: url('../img/shark.png');
+	background-attachment: fixed;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 h1 {
 	font-size: 3vw;
-	color: #5434af;
-}
-
-nav {
-	background: #5434af;
-	height: 80px;
-	width: 100%;
-}
-label.logo {
-	color: white;
-	font-size: 35px;
-	line-height: 80px;
-	padding: 0 100px;
-	font-weight: bold;
-}
-nav ul {
-	float: right;
-	margin-right: 20px;
-}
-nav ul li {
-	display: inline-block;
-	line-height: 80px;
-	margin: 0 5px;
-}
-nav ul li a {
-	color: white;
-	font-size: 17px;
-	padding: 7px 13px;
-	border-radius: 3px;
-	text-transform: uppercase;
-}
-a.active, a:hover {
-	background: #1d075f;
-	transition: .5s;
+	color: #4287f5;
 }
 .checkbtn {
 	font-size: 30px;
@@ -65,6 +55,7 @@ section {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+	height: 85vh;
 }
 
 form {
@@ -133,9 +124,57 @@ form {
     font-weight: 800;
     letter-spacing: 1px;
     color: white;
-    background: #5434af;
+    background: #4287f5;
     cursor: pointer;
     transition: box-shadow 0.25s;
+}
+
+.topnav {
+	background-color: #0d2b5c;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	left: 0;
+	right: 0;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	background-color: #4287f5;
+	color: #0d2b5c;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+	background-color: #4287f5;
+	color: #0d2b5c;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+	display: none;
+}
+
+footer {
+	background-color: #0d2b5c;
+	height: 150px;
+	width: 100%;
+	text-align: center;
+   	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 @media (max-width: 952px){

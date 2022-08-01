@@ -9,20 +9,17 @@
     <title>Fale Conosco</title>
 </head>
 <body>
-    <nav>
-		<input type="checkbox" id="check">
-		<label for="check" class="checkbtn">
-			<i class="fas fa-bars"></i>
-		</label>
-		<label class="logo">Minha Logo</label>
-		<ul>
-			<li><a href="#">Início</a></li>
-			<li><a href="./news.html">Notícias</a></li>
-			<li><a href="#">Serviços</a></li>
-			<li><a class="active" href="./contact.html">Contato</a></li>
-		</ul>
-	</nav>
-	<section>
+    <nav class="topnav" id="myTopnav">
+        <a href="main.html" class="home">Home</a>
+        <a href="main.html#categorias">Categorias</a>
+        <a href="news.html">Noticias</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="contact.html">Contato</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+	<section style="padding-top: 40px;">
         <h1 style="margin: 20px;">Entre em contato conosco</h1>
 		<form action="https://formsubmit.co/lucasmxavier1@gmail.com" method="POST">
             <div class="form-fields">
@@ -36,5 +33,13 @@
             </div>
         </form>
 	</section>
+    <footer class="footer">
+        <ul>
+            <li><a href="https:/www.instagram.com"><img src="../img/instagram.png" alt=""></a></li>
+            <li><a href="https:/www.facebook.com"><img src="../img/facebook.png" alt=""></a></li>
+            <li><a href="https://www.google.com/maps"><img src="../img/maps.png" alt=""></a></li>
+            <li><a href="https://mail.google.com/"><img src="../img/icons8-gmail-48.png" alt=""></a></li>
+        </ul>
+    </footer>
 </body>
 </html>
